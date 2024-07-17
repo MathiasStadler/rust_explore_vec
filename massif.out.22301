@@ -1,0 +1,364 @@
+desc: (none)
+cmd: target/debug/examples/vec_3
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=231567
+mem_heap_B=312
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=232199
+mem_heap_B=432
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=232553
+mem_heap_B=1456
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=233646
+mem_heap_B=1576
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=328837
+mem_heap_B=1576
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=peak
+n4: 1576 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x490F8B1: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x491959B: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x491959B: _IO_doallocbuf (genops.c:342)
+    n1: 1024 0x4918C1F: _IO_file_underflow@@GLIBC_2.4 (fileops.c:485)
+     n1: 1024 0x4910A31: getdelim (iogetdelim.c:73)
+      n1: 1024 0x491EF37: pthread_getattr_np@@GLIBC_2.32 (pthread_getattr_np.c:122)
+       n1: 1024 0x1269D3: get_stack_start (stack_overflow.rs:296)
+        n1: 1024 0x1269D3: get_stack_start_aligned (stack_overflow.rs:311)
+         n1: 1024 0x1269D3: install_main_guard (stack_overflow.rs:341)
+          n1: 1024 0x1269D3: init (stack_overflow.rs:123)
+           n1: 1024 0x1269D3: init (mod.rs:62)
+            n1: 1024 0x1269D3: init (rt.rs:94)
+             n1: 1024 0x1269D3: {closure#1} (rt.rs:140)
+              n1: 1024 0x1269D3: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:559)
+               n1: 1024 0x1269D3: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:523)
+                n1: 1024 0x1269D3: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:149)
+                 n1: 1024 0x1269D3: std::rt::lang_start_internal (rt.rs:140)
+                  n1: 1024 0x10DD6F: std::rt::lang_start (rt.rs:158)
+                   n0: 1024 0x10D5B3: main (in /home/user/workspace_rust/rust_explore_vec/target/debug/examples/vec_3)
+ n1: 312 0x491004B: __fopen_internal (iofopen.c:65)
+  n1: 312 0x491EE61: pthread_getattr_np@@GLIBC_2.32 (pthread_getattr_np.c:85)
+   n1: 312 0x1269D3: get_stack_start (stack_overflow.rs:296)
+    n1: 312 0x1269D3: get_stack_start_aligned (stack_overflow.rs:311)
+     n1: 312 0x1269D3: install_main_guard (stack_overflow.rs:341)
+      n1: 312 0x1269D3: init (stack_overflow.rs:123)
+       n1: 312 0x1269D3: init (mod.rs:62)
+        n1: 312 0x1269D3: init (rt.rs:94)
+         n1: 312 0x1269D3: {closure#1} (rt.rs:140)
+          n1: 312 0x1269D3: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:559)
+           n1: 312 0x1269D3: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:523)
+            n1: 312 0x1269D3: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:149)
+             n1: 312 0x1269D3: std::rt::lang_start_internal (rt.rs:140)
+              n1: 312 0x10DD6F: std::rt::lang_start (rt.rs:158)
+               n0: 312 0x10D5B3: main (in /home/user/workspace_rust/rust_explore_vec/target/debug/examples/vec_3)
+ n1: 240 0x4910955: getdelim (iogetdelim.c:102)
+  n1: 240 0x491EF37: pthread_getattr_np@@GLIBC_2.32 (pthread_getattr_np.c:122)
+   n1: 240 0x1269D3: get_stack_start (stack_overflow.rs:296)
+    n1: 240 0x1269D3: get_stack_start_aligned (stack_overflow.rs:311)
+     n1: 240 0x1269D3: install_main_guard (stack_overflow.rs:341)
+      n1: 240 0x1269D3: init (stack_overflow.rs:123)
+       n1: 240 0x1269D3: init (mod.rs:62)
+        n1: 240 0x1269D3: init (rt.rs:94)
+         n1: 240 0x1269D3: {closure#1} (rt.rs:140)
+          n1: 240 0x1269D3: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:559)
+           n1: 240 0x1269D3: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:523)
+            n1: 240 0x1269D3: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:149)
+             n1: 240 0x1269D3: std::rt::lang_start_internal (rt.rs:140)
+              n1: 240 0x10DD6F: std::rt::lang_start (rt.rs:158)
+               n0: 240 0x10D5B3: main (in /home/user/workspace_rust/rust_explore_vec/target/debug/examples/vec_3)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=6
+#-----------
+time=328837
+mem_heap_B=1336
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=329099
+mem_heap_B=312
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=329240
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=330076
+mem_heap_B=32
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=331042
+mem_heap_B=172
+mem_heap_extra_B=20
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=331128
+mem_heap_B=204
+mem_heap_extra_B=28
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=331218
+mem_heap_B=172
+mem_heap_extra_B=20
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=331312
+mem_heap_B=140
+mem_heap_extra_B=12
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=331353
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=332449
+mem_heap_B=32
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=detailed
+n8: 32 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32 0x1270D7: alloc (alloc.rs:100)
+  n1: 32 0x1270D7: alloc_impl (alloc.rs:183)
+   n1: 32 0x1270D7: allocate (alloc.rs:243)
+    n1: 32 0x1270D7: {closure#0}<std::thread::Inner> (sync.rs:538)
+     n1: 32 0x1270D7: allocate_for_layout<core::mem::maybe_uninit::MaybeUninit<std::thread::Inner>, alloc::sync::{impl#14}::new_uninit::{closure_env#0}<std::thread::Inner>, fn(*mut u8) -> *mut alloc::sync::ArcInner<core::mem::maybe_uninit::MaybeUninit<std::thread::Inner>>> (sync.rs:1860)
+      n1: 32 0x1270D7: new_uninit<std::thread::Inner> (sync.rs:536)
+       n1: 32 0x1270D7: std::thread::Thread::new_inner (mod.rs:1338)
+        n1: 32 0x126B3B: new_main (mod.rs:1326)
+         n1: 32 0x126B3B: init (rt.rs:97)
+          n1: 32 0x126B3B: {closure#1} (rt.rs:140)
+           n1: 32 0x126B3B: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:559)
+            n1: 32 0x126B3B: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:523)
+             n1: 32 0x126B3B: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:149)
+              n1: 32 0x126B3B: std::rt::lang_start_internal (rt.rs:140)
+               n1: 32 0x10DD6F: std::rt::lang_start (rt.rs:158)
+                n0: 32 0x10D5B3: main (in /home/user/workspace_rust/rust_explore_vec/target/debug/examples/vec_3)
+ n1: 0 0x490F8B1: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 0 0x491959B: _IO_doallocbuf (genops.c:347)
+   n1: 0 0x491959B: _IO_doallocbuf (genops.c:342)
+    n1: 0 0x4918C1F: _IO_file_underflow@@GLIBC_2.4 (fileops.c:485)
+     n1: 0 0x4910A31: getdelim (iogetdelim.c:73)
+      n1: 0 0x491EF37: pthread_getattr_np@@GLIBC_2.32 (pthread_getattr_np.c:122)
+       n1: 0 0x1269D3: get_stack_start (stack_overflow.rs:296)
+        n1: 0 0x1269D3: get_stack_start_aligned (stack_overflow.rs:311)
+         n1: 0 0x1269D3: install_main_guard (stack_overflow.rs:341)
+          n1: 0 0x1269D3: init (stack_overflow.rs:123)
+           n1: 0 0x1269D3: init (mod.rs:62)
+            n1: 0 0x1269D3: init (rt.rs:94)
+             n1: 0 0x1269D3: {closure#1} (rt.rs:140)
+              n1: 0 0x1269D3: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:559)
+               n1: 0 0x1269D3: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:523)
+                n1: 0 0x1269D3: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:149)
+                 n1: 0 0x1269D3: std::rt::lang_start_internal (rt.rs:140)
+                  n1: 0 0x10DD6F: std::rt::lang_start (rt.rs:158)
+                   n0: 0 0x10D5B3: main (in /home/user/workspace_rust/rust_explore_vec/target/debug/examples/vec_3)
+ n1: 0 0x491004B: __fopen_internal (iofopen.c:65)
+  n1: 0 0x491EE61: pthread_getattr_np@@GLIBC_2.32 (pthread_getattr_np.c:85)
+   n1: 0 0x1269D3: get_stack_start (stack_overflow.rs:296)
+    n1: 0 0x1269D3: get_stack_start_aligned (stack_overflow.rs:311)
+     n1: 0 0x1269D3: install_main_guard (stack_overflow.rs:341)
+      n1: 0 0x1269D3: init (stack_overflow.rs:123)
+       n1: 0 0x1269D3: init (mod.rs:62)
+        n1: 0 0x1269D3: init (rt.rs:94)
+         n1: 0 0x1269D3: {closure#1} (rt.rs:140)
+          n1: 0 0x1269D3: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:559)
+           n1: 0 0x1269D3: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:523)
+            n1: 0 0x1269D3: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:149)
+             n1: 0 0x1269D3: std::rt::lang_start_internal (rt.rs:140)
+              n1: 0 0x10DD6F: std::rt::lang_start (rt.rs:158)
+               n0: 0 0x10D5B3: main (in /home/user/workspace_rust/rust_explore_vec/target/debug/examples/vec_3)
+ n1: 0 0x4910915: getdelim (iogetdelim.c:62)
+  n1: 0 0x491EF37: pthread_getattr_np@@GLIBC_2.32 (pthread_getattr_np.c:122)
+   n1: 0 0x1269D3: get_stack_start (stack_overflow.rs:296)
+    n1: 0 0x1269D3: get_stack_start_aligned (stack_overflow.rs:311)
+     n1: 0 0x1269D3: install_main_guard (stack_overflow.rs:341)
+      n1: 0 0x1269D3: init (stack_overflow.rs:123)
+       n1: 0 0x1269D3: init (mod.rs:62)
+        n1: 0 0x1269D3: init (rt.rs:94)
+         n1: 0 0x1269D3: {closure#1} (rt.rs:140)
+          n1: 0 0x1269D3: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:559)
+           n1: 0 0x1269D3: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:523)
+            n1: 0 0x1269D3: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:149)
+             n1: 0 0x1269D3: std::rt::lang_start_internal (rt.rs:140)
+              n1: 0 0x10DD6F: std::rt::lang_start (rt.rs:158)
+               n0: 0 0x10D5B3: main (in /home/user/workspace_rust/rust_explore_vec/target/debug/examples/vec_3)
+ n1: 0 0x4910955: getdelim (iogetdelim.c:102)
+  n1: 0 0x491EF37: pthread_getattr_np@@GLIBC_2.32 (pthread_getattr_np.c:122)
+   n1: 0 0x1269D3: get_stack_start (stack_overflow.rs:296)
+    n1: 0 0x1269D3: get_stack_start_aligned (stack_overflow.rs:311)
+     n1: 0 0x1269D3: install_main_guard (stack_overflow.rs:341)
+      n1: 0 0x1269D3: init (stack_overflow.rs:123)
+       n1: 0 0x1269D3: init (mod.rs:62)
+        n1: 0 0x1269D3: init (rt.rs:94)
+         n1: 0 0x1269D3: {closure#1} (rt.rs:140)
+          n1: 0 0x1269D3: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:559)
+           n1: 0 0x1269D3: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:523)
+            n1: 0 0x1269D3: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:149)
+             n1: 0 0x1269D3: std::rt::lang_start_internal (rt.rs:140)
+              n1: 0 0x10DD6F: std::rt::lang_start (rt.rs:158)
+               n0: 0 0x10D5B3: main (in /home/user/workspace_rust/rust_explore_vec/target/debug/examples/vec_3)
+ n1: 0 0x491C157: __pthread_attr_extension (pthread_attr_extension.c:28)
+  n1: 0 0x491C315: pthread_attr_setaffinity_np@@GLIBC_2.32 (pthread_attr_setaffinity.c:45)
+   n1: 0 0x491EE03: pthread_getattr_np@@GLIBC_2.32 (pthread_getattr_np.c:194)
+    n1: 0 0x1269D3: get_stack_start (stack_overflow.rs:296)
+     n1: 0 0x1269D3: get_stack_start_aligned (stack_overflow.rs:311)
+      n1: 0 0x1269D3: install_main_guard (stack_overflow.rs:341)
+       n1: 0 0x1269D3: init (stack_overflow.rs:123)
+        n1: 0 0x1269D3: init (mod.rs:62)
+         n1: 0 0x1269D3: init (rt.rs:94)
+          n1: 0 0x1269D3: {closure#1} (rt.rs:140)
+           n1: 0 0x1269D3: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:559)
+            n1: 0 0x1269D3: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:523)
+             n1: 0 0x1269D3: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:149)
+              n1: 0 0x1269D3: std::rt::lang_start_internal (rt.rs:140)
+               n1: 0 0x10DD6F: std::rt::lang_start (rt.rs:158)
+                n0: 0 0x10D5B3: main (in /home/user/workspace_rust/rust_explore_vec/target/debug/examples/vec_3)
+ n1: 0 0x491C329: pthread_attr_setaffinity_np@@GLIBC_2.32 (pthread_attr_setaffinity.c:51)
+  n1: 0 0x491EE03: pthread_getattr_np@@GLIBC_2.32 (pthread_getattr_np.c:194)
+   n1: 0 0x1269D3: get_stack_start (stack_overflow.rs:296)
+    n1: 0 0x1269D3: get_stack_start_aligned (stack_overflow.rs:311)
+     n1: 0 0x1269D3: install_main_guard (stack_overflow.rs:341)
+      n1: 0 0x1269D3: init (stack_overflow.rs:123)
+       n1: 0 0x1269D3: init (mod.rs:62)
+        n1: 0 0x1269D3: init (rt.rs:94)
+         n1: 0 0x1269D3: {closure#1} (rt.rs:140)
+          n1: 0 0x1269D3: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:559)
+           n1: 0 0x1269D3: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:523)
+            n1: 0 0x1269D3: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:149)
+             n1: 0 0x1269D3: std::rt::lang_start_internal (rt.rs:140)
+              n1: 0 0x10DD6F: std::rt::lang_start (rt.rs:158)
+               n0: 0 0x10D5B3: main (in /home/user/workspace_rust/rust_explore_vec/target/debug/examples/vec_3)
+ n1: 0 0x491ED85: pthread_getattr_np@@GLIBC_2.32 (pthread_getattr_np.c:180)
+  n1: 0 0x1269D3: get_stack_start (stack_overflow.rs:296)
+   n1: 0 0x1269D3: get_stack_start_aligned (stack_overflow.rs:311)
+    n1: 0 0x1269D3: install_main_guard (stack_overflow.rs:341)
+     n1: 0 0x1269D3: init (stack_overflow.rs:123)
+      n1: 0 0x1269D3: init (mod.rs:62)
+       n1: 0 0x1269D3: init (rt.rs:94)
+        n1: 0 0x1269D3: {closure#1} (rt.rs:140)
+         n1: 0 0x1269D3: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:559)
+          n1: 0 0x1269D3: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:523)
+           n1: 0 0x1269D3: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:149)
+            n1: 0 0x1269D3: std::rt::lang_start_internal (rt.rs:140)
+             n1: 0 0x10DD6F: std::rt::lang_start (rt.rs:158)
+              n0: 0 0x10D5B3: main (in /home/user/workspace_rust/rust_explore_vec/target/debug/examples/vec_3)
+#-----------
+snapshot=16
+#-----------
+time=332661
+mem_heap_B=48
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=334749
+mem_heap_B=80
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=335548
+mem_heap_B=1104
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=340324
+mem_heap_B=1072
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=340579
+mem_heap_B=48
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=340897
+mem_heap_B=16
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=340946
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
