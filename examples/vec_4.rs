@@ -1,5 +1,4 @@
-fn main (){
-
+fn main() {
     // FROM HERE
     // https://doc.rust-lang.org/std/vec/struct.Vec.html
 
@@ -12,10 +11,19 @@ fn main (){
     vec_str.push(String::from("first"));
     vec_str.push(String::from("\"second\""));
     vec_str.push(String::from("third"));
-    vec_str.push(String::from("//child")); 
+    vec_str.push(String::from("//child"));
 
     vec_instances.push(vec_str.clone());
 
+
+    //second
+    vec_str = Vec::new();
+    vec_str.push(String::from("second line"));
+    vec_str.push(String::from("\"second\""));
+    vec_str.push(String::from("third"));
+    vec_str.push(String::from("//child"));
+
+    vec_instances.push(vec_str.clone());
 
     // for x in &vec_str {
     //     println!("{x}");
@@ -26,12 +34,17 @@ fn main (){
     //FROM HERE => https://doc.rust-lang.org/rust-by-example/std/vec.html
     for (i, x) in vec_instances.iter().enumerate() {
         println!("vec_instances => In position {:?} we have value {:?}", i, x);
-        println!("vec_instances => In position {:?} we have value {:?}", i, x[0]);
-        println!("vec_instances => In position {:?} we have value {:?}", i, x[1]);
-    }
+        println!(
+            "vec_instances => In position {:?} we have value {:?}",
+            i, x[0]
+        );
+        println!(
+            "vec_instances => In position {:?} we have value {:?}",
+            i, x[1]
+        );
 
-    for (i, x) in vec_str.iter().enumerate() {
-        println!("In position {} we have value {}", i, x);
+        for (i, x) in x.iter().enumerate() {
+            println!("In position {} we have value {}", i, x);
+        }
     }
-
 }
